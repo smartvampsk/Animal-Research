@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>View - Database - ICT320</title>
+
+    <style>
+        body{padding-left: 27%;}
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color:blue; padding-left: 16%;"><u> ICT320 - Database </u></h1>
+        <br>
+    </div>
+
+    <div class="center">
+        <u><h2 style="color:blue;">Views Results</h2></u>
+        <h3>Animal Vs Date Vs Time Vs Location</h3>
+        <table>
+            <tr>
+                <th>Animal</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+            </tr>
+            {% for row in animals %}
+            <tr>
+                <td>{{row.0}}</td>
+                <td>{{row.2}}</td>
+                <td>{{row.3}}</td>
+                <td>{{row.1}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+        <br>
+        <br>
+    <div class="center">
+        <h2>Number of contacts per animal</h2>
+        <table>
+            <tr>
+                <th>Animal</th>
+                <th>Frequency</th>
+            </tr>
+            {% for row1 in countAnimals %}
+            <tr>
+                <td>{{row1.0}}</td>
+                <td>{{row1.1}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <br><br><br>
+
+    <div>
+        <u><h2 style="color:blue;">Procedures Results</h2></u>
+        <h3>Animal with the greatest number of contacts</h3>
+        <table>
+            <tr>
+                <th>Animal</th>
+                <th>Frequency</th>
+            </tr>
+            {% for row2 in greatAnimal %}
+            <tr>
+                <td>{{row2.0}}</td>
+                <td>{{row2.1}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <br><br>
+        <h3>Year with the greatest number of contacts</h3>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Frequency</th>
+            </tr>
+            {% for row3 in greatYear %}
+            <tr>
+                <td>{{row3.0}}</td>
+                <td>{{row3.1}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br><br><br><br>
+    </div>
+</body>
+
+</html>
