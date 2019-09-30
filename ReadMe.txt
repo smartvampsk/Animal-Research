@@ -12,13 +12,13 @@
 4. Import 'research.sql'
 
 Requirements to run python file
-1.	Open PyCharm and import python ‘ict320’ project
+1.	Open PyCharm and import templates and view_database.py
 2.	Install Flask 
-•	Command: ‘pip install Flask’
+â€¢	Command: â€˜pip install Flaskâ€™
 3.	Install Flask-MySQL
-•	Command: ‘pip install flask-mysql’
+â€¢	Command: â€˜pip install flask-mysqlâ€™
 4.	After installing and opening python file and before running
-•	Command: ‘ set FLASK-APP=view_database.py ’
+â€¢	Command: â€˜ set FLASK-APP=view_database.py â€™
 ** NOTE: all these commands should be executed in the proper path of the project **
 
-For running the project we need to create a MySQL database and store records using XAMPP, then open the python file, run the file and open ‘http://127.0.0.1:5000/’ to view the results.
+For running the project we need to create a MySQL database and store records using XAMPP, then open the python file, run the file and open â€˜http://127.0.0.1:5000/â€™ to view the results.
